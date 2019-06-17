@@ -7,7 +7,7 @@ The semantic similarity datasets are generally in a "word1 word2 score" format, 
 
 The Google and MSR analogies datasets are [pair-based](https://aclweb.org/aclwiki/Analogy_(State_of_the_art)#Analogy_tasks): the task is to complete the analogy by inferring the last word from the first three. These datasets are in the usual "quad" format: four words to the line, separated by spaces, with lines separated into sections by `: SECTION_NAME` lines. 
 
-The BATS dataset is set-based rather than pair-based. That is, given a set of `word:word*` pairs which describe the analogy relation and an additional query word `w`, the goal is to find the matching word `w*` which completes the analogy. Each section of the BATS file (separated by the same `: SECTION_NAME` lines as above) consists of such a set. (Using the data in practice relies on sampling: one might, for instance, split a section into train and test sets, use a leave-one-out approach of attempting to complete each pair from the others, or use other strategies.)
+The BATS dataset is [set-based](https://aclweb.org/aclwiki/Analogy_(State_of_the_art)#Analogy_tasks) rather than pair-based. That is, given a set of `word:word*` pairs which describe the analogy relation and an additional query word `w`, the goal is to find the matching word `w*` which completes the analogy. Each section of the BATS file (separated by the same `: SECTION_NAME` lines as above) consists of such a set. (Using the data in practice relies on sampling: one might, for instance, split a section into train and test sets, use a leave-one-out approach of attempting to complete each pair from the others, or use other strategies.)
 
 The BATS dataset was extracted into one file from the original download by the following shell snippet:
 ```
