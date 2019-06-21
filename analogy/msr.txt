@@ -1,4 +1,4 @@
-:syntactic
+: syntactic
 good better rough rougher
 better good rougher rough
 good best rough roughest
